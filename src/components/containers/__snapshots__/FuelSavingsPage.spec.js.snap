@@ -3,142 +3,325 @@
 exports[`<FuelSavingsPage /> should match snapshot 1`] = `
 <div>
   <h2>
-    Fuel Savings Analysis
+    Fuel Savings Analysis 
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root-1"
+      color={undefined}
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+      />
+    </svg>
   </h2>
   <table>
     <tbody>
       <tr>
         <td>
-          <label
-            htmlFor="newMpg"
+          <div
+            aria-describedby={undefined}
+            className="MuiFormControl-root-8 MuiFormControl-marginNormal-9"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            New Vehicle MPG
-          </label>
-        </td>
-        <td>
-          <input
-            className="small"
-            name="newMpg"
-            onChange={[Function]}
-            placeholder={undefined}
-            type="text"
-            value=""
-          />
+            <label
+              className="MuiFormLabel-root-18 MuiInputLabel-root-12 MuiInputLabel-formControl-13 MuiInputLabel-animated-16"
+              data-shrink={false}
+              htmlFor={undefined}
+            >
+              New Vehicle MPG
+            </label>
+            <div
+              className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-inkbar-24 MuiInput-underline-28"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                aria-required={false}
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="MuiInput-input-31 MuiInput-inputSingleline-34"
+                defaultValue={undefined}
+                disabled={false}
+                id={undefined}
+                name="newMpg"
+                onChange={[Function]}
+                onKeyDown={undefined}
+                onKeyUp={undefined}
+                placeholder={undefined}
+                readOnly={undefined}
+                required={undefined}
+                rows={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
         </td>
       </tr>
       <tr>
         <td>
-          <label
-            htmlFor="tradeMpg"
+          <div
+            aria-describedby={undefined}
+            className="MuiFormControl-root-8 MuiFormControl-marginNormal-9"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            Trade-in MPG
-          </label>
-        </td>
-        <td>
-          <input
-            className="small"
-            name="tradeMpg"
-            onChange={[Function]}
-            placeholder={undefined}
-            type="text"
-            value=""
-          />
+            <label
+              className="MuiFormLabel-root-18 MuiInputLabel-root-12 MuiInputLabel-formControl-13 MuiInputLabel-animated-16"
+              data-shrink={false}
+              htmlFor={undefined}
+            >
+              Trade-in MPG
+            </label>
+            <div
+              className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-inkbar-24 MuiInput-underline-28"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                aria-required={false}
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="MuiInput-input-31 MuiInput-inputSingleline-34"
+                defaultValue={undefined}
+                disabled={false}
+                id={undefined}
+                name="tradeMpg"
+                onChange={[Function]}
+                onKeyDown={undefined}
+                onKeyUp={undefined}
+                placeholder={undefined}
+                readOnly={undefined}
+                required={undefined}
+                rows={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
         </td>
       </tr>
       <tr>
         <td>
-          <label
-            htmlFor="newPpg"
+          <div
+            aria-describedby={undefined}
+            className="MuiFormControl-root-8 MuiFormControl-marginNormal-9"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            New Vehicle price per gallon
-          </label>
-        </td>
-        <td>
-          <input
-            className="small"
-            name="newPpg"
-            onChange={[Function]}
-            placeholder={undefined}
-            type="text"
-            value=""
-          />
+            <label
+              className="MuiFormLabel-root-18 MuiInputLabel-root-12 MuiInputLabel-formControl-13 MuiInputLabel-animated-16"
+              data-shrink={false}
+              htmlFor={undefined}
+            >
+              New Vehicle price/gallon
+            </label>
+            <div
+              className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-inkbar-24 MuiInput-underline-28"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                aria-required={false}
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="MuiInput-input-31 MuiInput-inputSingleline-34"
+                defaultValue={undefined}
+                disabled={false}
+                id={undefined}
+                name="newPpg"
+                onChange={[Function]}
+                onKeyDown={undefined}
+                onKeyUp={undefined}
+                placeholder={undefined}
+                readOnly={undefined}
+                required={undefined}
+                rows={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
         </td>
       </tr>
       <tr>
         <td>
-          <label
-            htmlFor="tradePpg"
+          <div
+            aria-describedby={undefined}
+            className="MuiFormControl-root-8 MuiFormControl-marginNormal-9"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            Trade-in price per gallon
-          </label>
-        </td>
-        <td>
-          <input
-            className="small"
-            name="tradePpg"
-            onChange={[Function]}
-            placeholder={undefined}
-            type="text"
-            value=""
-          />
+            <label
+              className="MuiFormLabel-root-18 MuiInputLabel-root-12 MuiInputLabel-formControl-13 MuiInputLabel-animated-16"
+              data-shrink={false}
+              htmlFor={undefined}
+            >
+              Trade-in price/gallon
+            </label>
+            <div
+              className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-inkbar-24 MuiInput-underline-28"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                aria-required={false}
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="MuiInput-input-31 MuiInput-inputSingleline-34"
+                defaultValue={undefined}
+                disabled={false}
+                id={undefined}
+                name="tradePpg"
+                onChange={[Function]}
+                onKeyDown={undefined}
+                onKeyUp={undefined}
+                placeholder={undefined}
+                readOnly={undefined}
+                required={undefined}
+                rows={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
         </td>
       </tr>
       <tr>
         <td>
-          <label
-            htmlFor="milesDriven"
+          <div
+            aria-describedby={undefined}
+            className="MuiFormControl-root-8 MuiFormControl-marginNormal-9"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            Miles Driven
-          </label>
-        </td>
-        <td>
-          <input
-            className="small"
-            name="milesDriven"
-            onChange={[Function]}
-            placeholder={undefined}
-            type="text"
-            value=""
-          />
+            <label
+              className="MuiFormLabel-root-18 MuiInputLabel-root-12 MuiInputLabel-formControl-13 MuiInputLabel-animated-16"
+              data-shrink={false}
+              htmlFor={undefined}
+            >
+              Miles Driven
+            </label>
+            <div
+              className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-inkbar-24 MuiInput-underline-28"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                aria-required={false}
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="MuiInput-input-31 MuiInput-inputSingleline-34"
+                defaultValue={undefined}
+                disabled={false}
+                id={undefined}
+                name="milesDriven"
+                onChange={[Function]}
+                onKeyDown={undefined}
+                onKeyUp={undefined}
+                placeholder={undefined}
+                readOnly={undefined}
+                required={undefined}
+                rows={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
           miles per
-          <select
-            name="milesDrivenTimeframe"
-            onChange={[Function]}
-            value="week"
-          >
-            <option
-              value="week"
+          <span>
+            <button
+              aria-haspopup="true"
+              aria-owns={null}
+              className="MuiButtonBase-root-52 MuiButton-root-37"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex={0}
+              type="button"
             >
-              Week
-            </option>
-            <option
-              value="month"
-            >
-              Month
-            </option>
-            <option
-              value="year"
-            >
-              Year
-            </option>
-          </select>
+              <span
+                className="MuiButton-label-39"
+              >
+                Choose Time Period
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root-1"
+                  color={undefined}
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root-54"
+              />
+            </button>
+          </span>
         </td>
       </tr>
       <tr>
         <td>
           <label>
-            Date Modified
+            Date Modified: 
           </label>
         </td>
-        <td />
       </tr>
     </tbody>
   </table>
   <hr />
-  <input
+  <button
+    className="MuiButtonBase-root-52 MuiButton-root-37 MuiButton-raised-44 MuiButton-raisedPrimary-46"
+    disabled={false}
+    onBlur={[Function]}
     onClick={[Function]}
-    type="submit"
-    value="Save"
-  />
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label-39"
+    >
+      Save
+    </span>
+    <span
+      className="MuiTouchRipple-root-54"
+    />
+  </button>
 </div>
 `;

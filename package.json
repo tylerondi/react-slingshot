@@ -1,13 +1,12 @@
 {
-  "name": "react-slingshot",
-  "version": "7.0.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "test-react-slingshot",
+  "version": "0.1.0",
+  "description": "Just testing",
   "engines": {
     "npm": ">=3"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
-    "setup": "node tools/setup/setupMessage.js && npm install && node tools/setup/setup.js",
     "remove-demo": "babel-node tools/removeDemo.js",
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm run start-message",
@@ -28,9 +27,12 @@
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Cory House",
+  "author": "Tyler Ondricek",
   "license": "MIT",
   "dependencies": {
+    "material-design-icons": "3.0.1",
+    "material-ui": "1.0.0-beta.30",
+    "material-ui-icons": "1.0.0-beta.17",
     "object-assign": "4.1.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -38,7 +40,8 @@
     "react-router-dom": "4.2.2",
     "react-router-redux": "5.0.0-alpha.6",
     "redux": "3.6.0",
-    "redux-thunk": "2.1.0"
+    "redux-thunk": "2.1.0",
+    "typeface-roboto": "0.0.50"
   },
   "devDependencies": {
     "autoprefixer": "7.1.4",
@@ -74,6 +77,8 @@
     "jest": "20.0.4",
     "jest-cli": "20.0.4",
     "json-loader": "0.5.4",
+    "less": "2.7.3",
+    "less-loader": "4.0.5",
     "mockdate": "2.0.1",
     "node-sass": "4.5.3",
     "opn-cli": "3.1.0",
@@ -96,29 +101,15 @@
     "webpack-hot-middleware": "2.18.2",
     "webpack-md5-hash": "0.0.5"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "react-router",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "redux",
-    "flux",
-    "boilerplate",
-    "starter"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
+    "url": ""
   },
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/assetsTransformer.js",
-      "\\.(css)$": "<rootDir>/tools/assetsTransformer.js"
+      "\\.(css|less)$": "<rootDir>/tools/assetsTransformer.js"
     },
     "setupFiles": [
       "raf/polyfill",

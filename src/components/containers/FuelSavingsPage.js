@@ -2,30 +2,39 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import { withStyles } from 'material-ui/styles';
+import withRoot from '../../styles/withRoot';
+import {fuelSavingPageStyles} from '../../styles/styles';
 import * as actions from '../../actions/fuelSavingsActions';
 import FuelSavingsForm from '../FuelSavingsForm';
 
 export class FuelSavingsPage extends React.Component {
   saveFuelSavings = () => {
     this.props.actions.saveFuelSavings(this.props.fuelSavings);
-  }
+  };
 
   calculateFuelSavings = e => {
     this.props.actions.calculateFuelSavings(this.props.fuelSavings, e.target.name, e.target.value);
-  }
+  };
 
   render() {
+    const { classes, fuelSavings } = this.props;
+
     return (
-      <FuelSavingsForm
-        onSaveClick={this.saveFuelSavings}
-        onChange={this.calculateFuelSavings}
-        fuelSavings={this.props.fuelSavings}
-      />
+      <div className={classes.root}>
+        <FuelSavingsForm
+          onSaveClick={this.saveFuelSavings}
+          onChange={this.calculateFuelSavings}
+          fuelSavings={fuelSavings}
+          classes={classes}
+        />
+      </div>
     );
   }
 }
 
 FuelSavingsPage.propTypes = {
+  classes: PropTypes.object.isRequired,
   actions: PropTypes.object.isRequired,
   fuelSavings: PropTypes.object.isRequired
 };
@@ -45,4 +54,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(FuelSavingsPage);
+)(withRoot(withStyles(fuelSavingPageStyles)(FuelSavingsPage)));
